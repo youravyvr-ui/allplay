@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10101a">
+  <meta name="description" content="ALLPLAY — a growing collection of free, genuinely playable games.">
+  <title>ALLPLAY — Play something good</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#discover" aria-label="ALLPLAY home"><span class="brand-mark">A</span><span>ALLPLAY<span class="brand-period">.</span></span></a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button class="nav-button active" type="button" data-nav="discover">Discover</button>
+        <button class="nav-button" type="button" data-nav="favorites">My games</button>
+        <button class="nav-button" type="button" data-nav="recent">Recently played</button>
+      </nav>
+      <div class="header-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="game-search" type="search" placeholder="Find a game" autocomplete="off" aria-label="Search games"><kbd>/</kbd></label>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">☼</button>
+        <button class="profile-chip" id="profile-button" type="button"><span class="profile-avatar">P</span><span>Local profile</span></button>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1"></main>
+    <footer class="site-footer"><span>ALLPLAY <span class="brand-period">•</span> Play fair. Play together.</span><span>Free to play · Local games · No account required</span></footer>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

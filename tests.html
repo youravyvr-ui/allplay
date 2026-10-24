@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ALLPLAY browser checks</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { padding: 24px; }
+    .test-shell { max-width: 760px; margin: 0 auto; }
+    .test-shell h1 { font: 700 28px 'Space Grotesk', sans-serif; }
+    .test-shell p { color: var(--muted); }
+    #test-results { display: grid; gap: 8px; padding: 0; list-style: none; }
+    #test-results li { padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+    #test-results .pass { color: var(--mint); }
+    #test-results .fail { color: var(--danger); }
+    #test-summary { font-weight: 700; }
+    #test-fixtures { position: absolute; left: -10000px; top: 0; width: 600px; }
+  </style>
+</head>
+<body>
+  <main class="test-shell">
+    <a class="brand" href="index.html"><span class="brand-mark">A</span><span>ALLPLAY<span class="brand-period">.</span></span></a>
+    <h1>Browser game checks</h1>
+    <p>Dependency-free interaction smoke checks for each shipped game module.</p>
+    <p id="test-summary" role="status" aria-live="polite">Running…</p>
+    <ul id="test-results"></ul>
+    <div id="test-fixtures" aria-hidden="true"></div>
+  </main>
+  <script type="module" src="js/test-runner.js"></script>
+</body>
+</html>
